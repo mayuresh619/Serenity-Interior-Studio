@@ -250,6 +250,23 @@ p a:hover {
 .sidebar div.connect a#youtube:hover {
 	background:url(../images/icons.png) no-repeat 0 -346px;
 }
+.sidebar div.connect a#whatsapp {
+	background-color:#25D366;
+	width:26px;
+	height:24px;
+	margin-bottom:20px;
+	border-radius:3px;
+	font-size:14px;
+	color:#fff;
+	text-indent:0;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	font-weight:bold;
+}
+.sidebar div.connect a#whatsapp:hover {
+	background-color:#1EAD54;
+}
 /*------------------------- Body ------------------------*/
 .body {
 	float:right;
