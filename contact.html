@@ -1,81 +1,186 @@
 <!doctype html>
-<!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>contact - Space Science Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/mobile.css">
-	<script src="js/mobile.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - SERENITY INTERIOR DESIGN STUDIO</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <script src="js/mobile.js" type="text/javascript"></script>
+    <style>
+    /* Desktop base styles remain unchanged visually */
+    #body .header div form input {
+        background-color: #A3A3A3;
+        border: medium none;
+        color: #000000;
+        display: block;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: normal;
+        height: 43px;
+        line-height: 43px;
+        margin: 0 0 29px;
+        padding: 0 0 0 20px;
+        text-align: left;
+        width: 441px;
+        box-sizing: border-box; /* Ensures padding does not break mobile layout sizes */
+    }
+
+    #body .header div form {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        width: 461px;
+        max-width: 100%; /* Prevents the container form structure from overflowing */
+    }
+
+    #body .header div form textarea {
+        background-color: #A3A3A3;
+        border: medium none;
+        color: #000000;
+        display: block;
+        font-family: Arial;
+        font-size: 18px;
+        font-weight: normal;
+        height: 98px;
+        line-height: 24px;
+        margin: 0 0 31px;
+        overflow: auto;
+        padding: 15px 0 0 20px;
+        resize: none;
+        text-align: left;
+        width: 441px;
+        box-sizing: border-box; /* Ensures padding does not break mobile layout sizes */
+    }
+
+    #body .header div form input#submit {
+        background-color: #3c0f38;
+        color: #ffffff;
+        cursor: pointer;
+        display: block;
+        float: right;
+        font-family: Arial;
+        font-size: 14px;
+        font-weight: normal;
+        height: 31px;
+        line-height: 31px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        text-transform: uppercase;
+        width: 120px;
+    }
+
+    /* Fixed WhatsApp badge rules */
+    .fixed-image {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    .fixed-image img {
+        width: 50px;
+        height: auto;
+    }
+
+    /* Responsive Mobile Media Queries */
+    @media screen and (max-width: 600px) {
+        #body .header div .contact {
+            padding: 15px; /* Ensures text doesn't touch screen edges on small devices */
+        }
+        
+        #body .header div form {
+            width: 100%;
+        }
+
+        #body .header div form input,
+        #body .header div form textarea {
+            width: 100%; /* Converts fixed 441px width to full width of screen container */
+        }
+        
+        #body .header div form input#submit {
+            float: none;
+            margin: 0 auto; /* Centers the send button comfortably on small devices */
+        }
+    }
+    </style>
 </head>
 <body>
-	<div id="page">
-		<div id="header">
-			<div>
-				<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
-				<ul id="navigation">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li class="menu">
-						<a href="projects.html">Projects</a>
-						<ul class="primary">
-							<li>
-								<a href="proj1.html">proj 1</a>
-							</li>
-						</ul>
-					</li>
-					<li class="menu">
-						<a href="blog.html">Blog</a>
-						<ul class="secondary">
-							<li>
-								<a href="singlepost.html">Single post</a>
-							</li>
-						</ul>
-					</li>
-					<li class="selected">
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div id="body">
-			<div class="header">
-				<div class="contact">
-					<h1>Contact</h1>
-					<h2>DO NOT HESITATE TO CONTACT US</h2>
-					<form action="index.html">
-						<input type="text" name="Name" value="Name" onblur="this.value=!this.value?'Name':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<input type="text" name="Email Address" value="Email Address" onblur="this.value=!this.value?'Email Address':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<input type="text" name="Subject" value="Subject" onblur="this.value=!this.value?'Subject':this.value;" onfocus="this.select()" onclick="this.value='';">
-						<textarea name="message" cols="50" rows="7">Message</textarea>
-						<input type="submit" value="Send" id="submit">
+    <div class="fixed-image">
+        <a href="http://wa.me/918693080266" target="_blank">
+            <img src="images/WhatsAppLogo.png" alt="Fixed Image">
+        </a>
+    </div>
+    <div id="page">
+        <div id="header">
+            <div>
+                <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+                <ul id="navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li class="menu">
+                        <a href="projects.html">Projects</a>
+                        <ul class="primary">
+                            <li>
+                                <a href="proj1.html">proj 1</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="selected">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="body">
+            <div class="header">
+                <div class="contact">
+                    <h1>CONTACT US</h1>
+                    <h3>📍 Address:</h3>
+                    <p>Siddhivinayak Shubhashish, Sector 19, Plot No. 27, Room No. 004, New Panvel</p>
+                    <h3>📞 Phone:</h3>
+                    <p><a href="tel:+918693080266">+91 8693080266</a></p>
+                    <h3>📧 Email:</h3>
+                    <p><a href="mailto:shraddhajoshi939@gmail.com">shraddhajoshi939@gmail.com</a></p>
+                    <!-- <form action="index.html" class="contact-form">
+                        <input type="text" name="Name" value="NAME" onblur="this.value=!this.value?'NAME':this.value;" onfocus="this.select()" onclick="this.value='';">
+                        <input type="text" name="Email Address" value="EMAIL ADDRESS" onblur="this.value=!this.value?'EMAIL ADDRESS':this.value;" onfocus="this.select()" onclick="this.value='';">
+                        <input type="text" name="Subject" value="SUBJECT" onblur="this.value=!this.value?'SUBJECT':this.value;" onfocus="this.select()" onclick="this.value='';">
+                        <textarea name="message" cols="50" rows="7">MESSAGE</textarea>
+                        <input type="submit" value="SEND" id="submit">
+                    </form> -->
+					<form action="https://formspree.io/f/mwvjaldg" method="POST" class="contact-form">
+    					<input type="text" name="name" value="NAME" onblur="this.value=!this.value?'NAME':this.value;" onfocus="this.select()" onclick="this.value='';">
+    					<input type="email" name="email" value="EMAIL ADDRESS" onblur="this.value=!this.value?'EMAIL ADDRESS':this.value;" onfocus="this.select()" onclick="this.value='';">
+    					<input type="text" name="subject" value="SUBJECT" onblur="this.value=!this.value?'SUBJECT':this.value;" onfocus="this.select()" onclick="this.value='';">
+    					<textarea name="message" cols="50" rows="7" onblur="this.value=!this.value?'MESSAGE':this.value;" onfocus="this.select()" onclick="this.value='';">MESSAGE</textarea>
+    					<input type="submit" value="SEND" id="submit">
 					</form>
-				</div>
-			</div>
-		</div>
-		<div id="footer">
-			<div class="connect">
-				<div>
-					<h1>FOLLOW OUR  MISSIONS ON</h1>
-					<div>
-						<a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
-						<a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
-						<a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
-						<a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
-					</div>
-				</div>
-			</div>
-			<div class="footnote">
-				<div>
-					<p>&copy; 2023 BY SPACE PROSPECTION | ALL RIGHTS RESERVED</p>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="connect">
+                <div>
+                    <h1>FOLLOW US ON</h1>
+                    <div>
+                        <a href="http://freewebsitetemplates.com/go/facebook/" class="facebook">facebook</a>
+                        <a href="http://freewebsitetemplates.com/go/twitter/" class="twitter">twitter</a>
+                        <a href="http://freewebsitetemplates.com/go/googleplus/" class="googleplus">googleplus</a>
+                        <a href="http://pinterest.com/fwtemplates/" class="pinterest">pinterest</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footnote">
+                <div>
+                    <p>&copy; 2026 BY SERENITY INTERIOR DESIGN STUDIO | ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
